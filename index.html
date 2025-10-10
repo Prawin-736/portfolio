@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fullstack Developer Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css">
+
+ <script>
+  // Set theme early to avoid flicker
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+    document.documentElement.setAttribute('data-bs-theme', 'dark');
+  } else if (savedTheme === 'light') {
+    document.documentElement.setAttribute('data-bs-theme', 'light');
+  }
+</script>
+
+</head>
+<body class="main background-white text-dark">
+
+  <div class="container py-4">
+
+    <div class="d-flex justify-content-end align-items-center mb-2">
+      <button class="btn btn-outline-light btn-circle my-shadow" id="toggleButton"></button>  
+    </div>
+
+    <div class="d-flex flex-column flex-md-row align-items-center mb-5">
+
+      <div class="order-2 order-md-1 col-12 col-md-4 text-center mb-3 mb-md-0">
+        <div style="width: 15rem; height: 15rem; border-radius: 50%; overflow: hidden; margin: 0 auto;">
+          <img src="./testing image/image4.jpg" alt="Developer Photo" style="width: 100%; height: 100%; object-fit: cover;" />
+        </div>
+      </div>
+
+      <div class="order-3 order-md-2 col-12 col-md-8 text-center text-md-start px-3">
+        <h3 class="font-color-black">Hey, I’m Prawin Kumar</h3>
+        <p class="font-color-black">
+          I’m a full-stack web developer who’s passionate about building clean, responsive, 
+          and user-friendly web applications. I love turning ideas into functional, well-designed digital 
+          experiences using modern web technologies. Before diving into code, I worked in architecture—so 
+          thoughtful design and attention to detail are second nature to me. Now, I focus on building web apps 
+          that are not only useful but also enjoyable to use.
+        </p>
+        <h5 class="font-color-black">Tech Stack:</h5>
+        <p>
+          <span class="badge bg-primary tech-badge">HTML</span>
+          <span class="badge bg-primary tech-badge">CSS</span>
+          <span class="badge bg-primary tech-badge">JavaScript</span>
+          <span class="badge bg-primary tech-badge">React</span>
+          <span class="badge bg-primary tech-badge">Node.js</span>
+          <span class="badge bg-primary tech-badge">Express</span>
+          <span class="badge bg-primary tech-badge">MongoDB</span>
+          <span class="badge bg-primary tech-badge">Bootstrap</span>
+        </p>
+        <a href="resume.pdf" class="btn btn-outline-secondary mt-2" download>📄 Download Resume</a>
+      </div>
+    </div>
+
+    <!-- Projects Section -->
+    <h3 class="mb-6 font-color-black">Projects</h3>
+    <div class="container my-4">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+
+    <!-- Project Card -->
+    <div class="col">
+      <div class="card h-100 flex-md-row align-items-stretch project-card">
+        
+        <!-- Image on the left -->
+        <div class="col-md-6">
+          <img src="/testing image/Screenshot 2025-10-07 153858.jpg" class="img-fluid h-100 object-fit-cover rounded-start" alt="Project 1">
+        </div>
+
+        <!-- Content on the right -->
+        <div class="col-md-6 d-flex flex-column p-3">
+          <h5 class="card-title">Project One</h5>
+          <p class="card-text">A brief description of the first project that gives context and highlights features.</p>
+          <div class="mb-2">
+            <span class="badge bg-secondary">React</span>
+            <span class="badge bg-secondary">Node.js</span>
+            <span class="badge bg-secondary">MongoDB</span>
+          </div>
+          <div class="mt-auto">
+            <a href="http://localhost:3000/api/user/signIn" target="_blank" class="btn btn-primary btn-sm me-2">Live Site</a>
+            <a href="https://github.com/Prawin-736/koku-social-media-app-" target="_blank" class="btn btn-dark btn-sm">GitHub</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Project Card -->
+    <div class="col">
+      <div class="card h-100 flex-md-row align-items-stretch project-card">
+        
+        <!-- Image on the left -->
+        <div class="col-md-5">
+          <img src="/testing image/Screenshot 2025-10-07 153858.jpg" class="img-fluid h-100 object-fit-cover rounded-start" alt="Project 1">
+        </div>
+
+        <!-- Content on the right -->
+        <div class="col-md-7 d-flex flex-column p-3">
+          <h5 class="card-title">Project One</h5>
+          <p class="card-text">A brief description of the first project that gives context and highlights features.</p>
+          <div class="mb-2">
+            <span class="badge bg-secondary">React</span>
+            <span class="badge bg-secondary">Node.js</span>
+            <span class="badge bg-secondary">MongoDB</span>
+          </div>
+          <div class="mt-auto">
+            <a href="https://prawin-736.github.io/superhero-hunter/" target="_blank" class="btn btn-primary btn-sm me-2">Live Site</a>
+            <a href="https://github.com/Prawin-736/superhero-hunter" target="_blank" class="btn btn-dark btn-sm">GitHub</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <!-- Project Card -->
+<div class="col">
+  <div class="card h-100 flex-md-row align-items-stretch project-card">
+    
+    <!-- Image on the left -->
+    <div class="col-md-6 p-0">
+      <img src="/testing image/Screenshot 2025-10-07 154341.jpg" class="img-fluid h-100 object-fit-cover rounded-start" alt="Project 1">
+    </div>
+
+    <!-- Content on the right -->
+    <div class="col-md-6 d-flex flex-column p-3">
+      <h5 class="card-title">Project One</h5>
+      <p class="card-text">A brief description of the first project that gives context and highlights features.</p>
+      <div class="mb-2">
+        <span class="badge bg-secondary">React</span>
+        <span class="badge bg-secondary">Node.js</span>
+        <span class="badge bg-secondary">MongoDB</span>
+      </div>
+      <div class="mt-auto">
+        <a href="https://prawin-736.github.io/Todo-list/" target="_blank" class="btn btn-primary btn-sm me-2">Live Site</a>
+        <a href="https://github.com/Prawin-736/Todo-list" target="_blank" class="btn btn-dark btn-sm">GitHub</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+    <!-- Project Card -->
+    <div class="col">
+      <div class="card h-100 flex-md-row align-items-stretch project-card">
+        
+        <!-- Image on the left -->
+        <div class="col-md-6">
+          <img src="/testing image/Screenshot 2025-10-07 154712.jpg" class="img-fluid h-100 object-fit-cover rounded-start" alt="Project 1">
+        </div>
+
+        <!-- Content on the right -->
+        <div class="col-md-6 d-flex flex-column p-3">
+          <h5 class="card-title">Koku Messenger</h5>
+          <small class="card-text">A basic messaging app which lets you to connect a group channel chat.where you can send messenge.also check all the online offline user status..</small>
+          <div class="mb-2">
+            <span class="badge bg-secondary">React</span>
+            <span class="badge bg-secondary">Node.js</span>
+            <span class="badge bg-secondary">MongoDB</span>
+          </div>
+          <div class="mt-auto">
+            <a href="http://localhost:5300/api/user/signIn"  target="_blank" class="btn btn-primary btn-sm me-2">Live Site</a>
+            <a href="#" target="_blank" class="btn btn-dark btn-sm">GitHub</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+    <!-- Footer -->
+    <footer class="text-center mt-5">
+      <p class="font-color-black">&copy; 2025 Prawin Kumar. Built with 💻 and ☕</p>
+    </footer>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

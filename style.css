@@ -1,0 +1,78 @@
+  body, html {
+  overflow-x: hidden;
+}
+  /* theme transition */
+  body {
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+/* ----------------------!!!!!!!!!!!!!!!!!!!background and color setting!!!!!!!!!!!!!! */
+
+.background-white{
+  background-color: white;
+}
+
+.font-color-black{
+  color: #212529;
+}
+
+.my-shadow {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+/*----------------- bootstrap dark theme custom color setup */
+
+[data-bs-theme="dark"] .background-white {
+  background-color: #212529;
+}
+
+[data-bs-theme="dark"] .font-color-black{
+  color: white;
+}
+
+[data-bs-theme="dark"] .my-shadow{
+box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+;
+
+}
+/*----------------- bootstrap dark theme custom color setup ----------------------------*/
+
+/* ----------------------!!!!!!!!!!!!!!!!!!!background and color setting!!!!!!!!!!!!!! -----------------------*/
+
+   .project-card {
+      transition: transform 0.2s;
+    }
+    .project-card:hover {
+      transform: scale(1.02);
+    }
+    .tech-badge {
+      margin: 2px;
+    }
+
+.btn-circle {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent; /* or set if you want */
+  color: var(--btn-border-color); /* optional: match icon color */
+  font-size: 24px;
+}
+
+
+/* display theme button */
+@media screen and (max-width: 768px) {
+
+  #toggleButton{
+position: relative;
+left: -20px;
+}
+
+}
+
+
+
