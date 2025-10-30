@@ -1,7 +1,14 @@
  //adding button basedon display theme.
  window.addEventListener('DOMContentLoaded', () => {
-    const savedTheme = localStorage.getItem('theme');
+    let savedTheme = localStorage.getItem('theme');
     const themeButton = document.querySelector('#toggleButton');
+
+// If no theme saved, default to light
+    if (!savedTheme) {
+    savedTheme = 'light';
+    localStorage.setItem('theme', savedTheme);
+    document.documentElement.setAttribute('data-bs-theme', savedTheme);
+     }
     
     if (savedTheme === 'dark') {
       themeButton.textContent = '🌙';

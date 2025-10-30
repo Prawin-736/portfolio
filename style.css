@@ -74,5 +74,17 @@ left: -20px;
 
 }
 
+@media screen and (max-width: 550px) {
 
+  .ProfilePicture{
+  width: 10rem !important;
+  height: 10rem !important;
+}
+
+.projectHeading{
+display: flex;
+justify-content: center;
+}
+
+}
 
